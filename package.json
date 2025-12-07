@@ -1,0 +1,16 @@
+{
+  "name": "map-of-github-data",
+  "version": "1.0.0",
+  "description": "This repository contains all the data files required to render the [map of github](https://github.com/anvaka/map-of-github).",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ngraph.forcelayout": "^3.3.1",
+    "ngraph.graph": "^20.1.1"
+  }
+}
