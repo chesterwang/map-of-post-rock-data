@@ -36,6 +36,7 @@ for (var i = 0; i < ITERATIONS_COUNT; ++i) {
 
 // Prepare GeoJSON feature collection
 var features = [];
+var labelIdCounter = 1;
 
 graph.forEachNode(function(node) {
   var pos = layout.getNodePosition(node.id);
@@ -51,10 +52,11 @@ graph.forEachNode(function(node) {
     properties: {
       name: node.id,
       symbolzoom: 2,
-      labelId: "",
+      labelId: String(labelIdCounter),
       ownerId: 1
     }
   });
+  labelIdCounter++;
 });
 
 // Create GeoJSON FeatureCollection
